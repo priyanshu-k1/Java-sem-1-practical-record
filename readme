@@ -1,0 +1,143 @@
+# Java Semester 1 Practical Record
+## Overview
+
+This repository contains 25 practical programs covering key Java concepts including object-oriented programming, data structures, multithreading, networking, and file I/O operations.
+
+## Programs
+
+### [Program 1](program1/Prg1.java) - Employee Salary Calculator
+**Concept:** Classes, Constructors, and Methods
+- Calculates net salary for multiple employees
+- Demonstrates constructor usage and method implementation
+- Includes allowance calculation, PF deduction, and tax computation
+
+### [Program 2](program2/Prg2.java) - E-Commerce Website
+**Concept:** Inheritance, Abstract Classes, and Dynamic Polymorphism
+- Implements an e-commerce system with product categories
+- Uses abstract `Product` class with multiple implementations (`Clothing`, `Electronics`, `Sports`)
+- Features a shopping cart system with inventory management
+- Demonstrates method overriding and polymorphic behavior
+
+### [Program 3](program3/Prg3.java) - Arithmetic Calculator with Packages
+**Concept:** Packages
+- Uses [`arithmeticpack.Calculator`](program3/arithmeticpack/Calculator.java) package
+- Performs basic arithmetic operations (add, subtract, multiply, divide)
+- Demonstrates package organization and import statements
+
+### [Program 4](program4/Prg4.java) & [Server](program4/Server.java) - Client-Server Architecture
+**Concept:** Multithreading and Networking
+- Implements a TCP/IP based client-server communication system
+- Server handles multiple clients using multithreading
+- Client sends messages and receives server responses
+- Default port: 5000
+
+### [Program 5](program5/Prg5.java) - Thread Synchronization
+**Concept:** Mutual Exclusion and Thread Safety
+- Demonstrates synchronized methods to prevent race conditions
+- Shows bank account transactions with multiple threads
+- Uses `synchronized` keyword for thread-safe operations
+
+### [Program 6](program6/Prg6.java) - Linked List Implementation
+**Concept:** Data Structures
+- Custom implementation of a singly linked list
+- Features insertion at beginning and end
+- Demonstrates node-based data structure manipulation
+
+### [Program 7](program7/Prg7.java) - HashSet and Iterator
+**Concept:** Collections Framework - Set Interface
+- Uses `HashSet` for storing unique elements
+- Demonstrates `Iterator` interface for collection traversal
+- Shows safe removal of elements during iteration
+
+### [Program 8](program8/Prg8.java) - Enumeration and Comparator
+**Concept:** Collections and Sorting
+- Uses `Vector` collection for dynamic arrays
+- Implements `Comparator` interface for custom sorting (high to low)
+- Demonstrates `Enumeration` interface for element traversal
+
+### [Program 9](program9/Prg9.java) - HashMap for Key-Value Storage
+**Concept:** Map Interface
+- Stores student data as name-grade pairs
+- Uses `HashMap` for efficient key-value operations
+- Demonstrates `Map.Entry` for displaying pairs
+- Interactive input using `Scanner`
+
+### [Program 10](program10/Prg10.java) - File Copy Operation
+**Concept:** File I/O Operations
+- Copies content from [textFileOne.txt](program10/textFileOne.txt) to [textFileTwo.txt](program10/textFileTwo.txt)
+- Uses `FileInputStream` and `FileOutputStream` for byte-level operations
+- Includes exception handling for file operations
+## Project Structure
+
+```
+Java-sem-1-practical-record/
+├── program1/           # Employee Salary Calculation
+├── program2/           # E-Commerce System
+├── program3/           # Package and Arithmetic Operations
+│   └── arithmeticpack/
+├── program4/           # Client-Server Communication
+├── program5/           # Thread Synchronization
+├── program6/           # Linked List Implementation
+├── program7/           # HashSet and Iterator
+├── program8/           # Enumeration and Comparator
+├── program9/           # HashMap Operations
+├── program10/          # File I/O Operations
+│   ├── textFileOne.txt
+│   └── textFileTwo.txt
+├── program11/          # Hello World
+├── .vscode/            # VS Code Configuration
+├── .gitignore          # Git Ignore Rules
+└── readme              # Documentation
+```
+
+## Key Concepts Covered
+
+- **Object-Oriented Programming:** Classes, Objects, Inheritance, Polymorphism, Encapsulation
+- **Data Structures:** Linked Lists, Vectors, Sets, Maps
+- **Collections Framework:** HashSet, HashMap, Vector, Iterator, Enumeration
+- **Multithreading:** Thread creation, synchronization, mutual exclusion
+- **Networking:** Socket programming, client-server architecture
+- **File I/O:** File reading and writing operations
+- **Packages:** Code organization and modularity
+- **Exception Handling:** Try-catch blocks, exception management
+
+## How to Run
+
+### Compile a Program
+```bash
+javac program<number>/Prg<number>.java
+```
+
+### Run a Program
+```bash
+java -cp program<number> Prg<number>
+```
+
+### Example: Running Program 1
+```bash
+javac program1/Prg1.java
+java -cp program1 Prg1
+```
+### Running Server-Client Programs (Program 4)
+**Terminal 1 - Start Server:**
+```bash
+javac program4/Server.java
+java -cp program4 Server
+```
+
+**Terminal 2 - Start Client:**
+```bash
+javac program4/Prg4.java
+java -cp program4 Prg4
+```
+## Author
+
+Priyanshu Kumar
+
+## Repository
+
+[Java-sem-1-practical-record](https://github.com/priyanshu-k1/Java-sem-1-practical-record)
+
+---
+
+**Last Updated:** 05/02/2025
