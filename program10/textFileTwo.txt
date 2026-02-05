@@ -1,0 +1,3 @@
+//hello this is a dummy file who's content will be copied to another file
+
+Hi I am priyanshu and I am writing this code to copy the content of this file to another file.
