@@ -117,14 +117,19 @@ class Inventory {
         return null;
     }
 
-    private Product[] getArrayByChoice(int choice) {
-        return switch (choice) {
-            case 1 -> clothing;
-            case 2 -> electronics;
-            case 3 -> sports;
-            default -> null;
-        };
+   private Product[] getArrayByChoice(int choice) { 
+    switch (choice) {
+        case 1:
+            return clothing; 
+        case 2:
+            return electronics;
+        case 3:
+            return sports;
+        default:
+            return null;
     }
+}
+
 }
 
 public class Prg2 {
