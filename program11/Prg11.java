@@ -1,3 +1,9 @@
+/*
+* 11. Write a Java program to add two text files and save the result in another text file.
+*  
+*  Sample Input: file1.txt and file2.txt 
+*  Sample Output: Two text files added successfully
+*/
 import java.io.*;
 public class Prg11 {
     public static void main(String[] args) {
@@ -5,23 +11,24 @@ public class Prg11 {
         try {
             BufferedReader br1 = new BufferedReader(new FileReader("file1.txt"));
             BufferedReader br2 = new BufferedReader(new FileReader("file2.txt"));
-            FileWriter fw = new FileWriter("U:\\Java-sem-1-practical-record\\program11\\output.txt");
 
-            String line;
+            String line1,line2;
 
-            // Read first file
-            while ((line = br1.readLine()) != null) {
-                fw.write(line + "\n");
+            // Read both file
+            while ((line1 = br1.readLine()) != null
+                && (line2 = br2.readLine()) != null)
+            {
+                    // Print the content of both file
+                if (line1 != null && line2 != null) 
+                {
+                    System.out.println("\n************************\n");
+                    System.out.println(line1);
+                    System.out.println(line2);
+                    System.out.println("\n************************\n");
+                }
             }
-
-            // Read second file
-            while ((line = br2.readLine()) != null) {
-                fw.write(line + "\n");
-            }
-
             br1.close();
             br2.close();
-            fw.close();
 
             System.out.println("Two text files added successfully");
 
