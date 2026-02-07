@@ -66,6 +66,18 @@ A student grade management system utilizing `HashMap` for efficient key-value pa
 
 A file handling program that performs byte-level file copying operations. The program reads content from [textFileOne.txt](program10/textFileOne.txt) and writes it to [textFileTwo.txt](program10/textFileTwo.txt) using `FileInputStream` and `FileOutputStream`. It includes comprehensive exception handling for robust file operation management.
 
+### [Program 11](program11/Prg11.java) - Text File Concatenation
+
+**Concept:** File I/O Operations
+
+A file handling program that concatenates two text files into a single combined output. The program reads content from [file1.txt](program11/file1.txt) and [file2.txt](program11/file2.txt), merges them sequentially using `BufferedReader` and `FileReader`, and displays the concatenated result. This demonstrates efficient file reading and string manipulation techniques.
+
+### [Program 12](program12/Prg12.java) - Object Serialization
+
+**Concept:** Serialization and Object Persistence
+
+A program that demonstrates Java object serialization by converting an object into a byte stream. The program creates an `Employ` object with employee information and serializes it to [employ.txt](program12/employ.txt) using `ObjectOutputStream`. This showcases the implementation of the `Serializable` interface for persistent object storage and retrieval.
+
 ## Project Structure
 
 ```
@@ -83,10 +95,16 @@ Java-sem-1-practical-record/
 ├── program10/          # File I/O Operations
 │   ├── textFileOne.txt
 │   └── textFileTwo.txt
-├── program11/          # Hello World
+├── program11/          # Text File Concatenation
+│   ├── file1.txt
+│   ├── file2.txt
+│   └── Prg11.java
+├── program12/          # Object Serialization
+│   ├── employ.txt
+│   └── Prg12.java
 ├── .vscode/            # VS Code Configuration
 ├── .gitignore          # Git Ignore Rules
-└── readme              # Documentation
+└── readme.md           # Documentation
 ```
 
 ## Key Concepts Covered
@@ -163,4 +181,4 @@ java -cp program4 Prg4
 
 ---
 
-**Last Updated:** 05/02/2026
+**Last Updated:** 06/02/2026
