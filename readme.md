@@ -78,6 +78,24 @@ A file handling program that concatenates two text files into a single combined 
 
 A program that demonstrates Java object serialization by converting an object into a byte stream. The program creates an `Employ` object with employee information and serializes it to [employ.txt](program12/employ.txt) using `ObjectOutputStream`. This showcases the implementation of the `Serializable` interface for persistent object storage and retrieval.
 
+### [Program 13](program13/prg13.java) - Web Page Retrieval
+
+**Concept:** URL and Network Programming
+
+A program that demonstrates retrieving and parsing web page content using Java's `URL` class. The program connects to a website via URL, reads the HTML content, and extracts specific information such as the page title using string parsing techniques.
+
+### [Program 14](program14/prg14.java) - Image Processing and Grayscale Conversion
+
+**Concept:** Image Processing and Graphics
+
+A program that demonstrates image processing by loading an image from a URL and converting it to grayscale. The program manipulates pixel data using `BufferedImage`, processes RGB color values, and saves the resulting grayscale image to disk using `ImageIO`.
+
+### [Program 15](program15/prg15.java) - AWT Registration Form with Event Handling
+
+**Concept:** GUI Programming and Event Handling
+
+A comprehensive GUI application built using Java AWT (Abstract Window Toolkit) that demonstrates creating a registration form with various controls including text fields, choice menus, checkboxes, and buttons. The program implements event handling through the `ActionListener` interface to respond to user interactions.
+
 ## Project Structure
 
 ```
@@ -102,6 +120,12 @@ Java-sem-1-practical-record/
 ├── program12/          # Object Serialization
 │   ├── employ.txt
 │   └── Prg12.java
+├── program13/          # Web Page Retrieval
+│   └── prg13.java
+├── program14/          # Image Processing
+│   └── prg14.java
+├── program15/          # AWT Registration Form
+│   └── prg15.java
 ├── .vscode/            # VS Code Configuration
 ├── .gitignore          # Git Ignore Rules
 └── readme.md           # Documentation
@@ -181,4 +205,7 @@ java -cp program4 Prg4
 
 ---
 
-**Last Updated:** 06/02/2026
+**Last Updated:** 09/02/2026
+
+
+[def]: program
