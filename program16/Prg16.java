@@ -53,7 +53,7 @@ public class Prg16 {
             
             addRecord(con, "Pinky", 5, "MCA");
 
-            modifyRecord(con, 5, "Pinky Sarkar", "MCA");
+            modifyRecord(con, 5, "Pinky Ponky", "MCA");
             retrieveRecords(con);
             deleteRecord(con, 101);
 
